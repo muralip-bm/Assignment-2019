@@ -4,24 +4,17 @@ Testing Environment:
 --------------------
 Operating System: Windows 10
 Browser: Chrome
-Technologies/Tools: Maven, Selenium WebDriver, TestNG
+Tools: Maven, Selenium WebDriver, TestNG
+IDE: Eclipse
 
 Steps to execute the scripts:
-1.	Download the code from git repository - link below:
+1.Download the code from git repository to any drive on machine, unzip it and then import the maven project in to an IDE.  
 https://github.com/muraliputtaparthi/daviesgroup-techchallenge.git
+Alternatively, can clone the git repository and add it to git view of an IDE
 
-2.	Import the maven project in to an IDE (Eclipse).
-
-3.	Add ChromeDriver files in path C:\Files.
+2.Add ChromeDriver.exe file in Project folder path (path - System.getProperty("user.dir")).
 ChromeDriver can be downloaded from the path: 
 https://chromedriver.storage.googleapis.com/index.html?path=2.42/
-
 Download the file meant for operating System. (for windows - chromedriver_win32.zip) 
-Please create folder ‘File’ in C: directory, Unzip the file and place in foldder c:\File. 
 
-4.	For some reason, if the above file can’t be placed in C drive. Place them in any path and update the same in Base.java file. 
-(value of System.setProperty) 
-
-5.	To test with Account Creation and Login – Please change the value of “createAccountMailID” to a new mail ID in the configdetails.properties file in the package daviesgroup.techchallenge.config
-
-6.	Run testng.xml as TEstNG Suite. File located in folder Technical Challenge.
+3.Run testng.xml as TEstNG Suite from IDE. File located in folder Technical Challenge.
