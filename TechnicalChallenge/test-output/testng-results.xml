@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TechChallenge" duration-ms="36069" started-at="2019-07-22T12:48:56Z" finished-at="2019-07-22T12:49:32Z">
+  <suite name="TechChallenge" duration-ms="39292" started-at="2019-07-22T14:37:16Z" finished-at="2019-07-22T14:37:56Z">
     <groups>
     </groups>
-    <test name="UITests" duration-ms="36069" started-at="2019-07-22T12:48:56Z" finished-at="2019-07-22T12:49:32Z">
+    <test name="UITests" duration-ms="39292" started-at="2019-07-22T14:37:16Z" finished-at="2019-07-22T14:37:56Z">
       <class name="daviesgroup.techchallenge.test.Tests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="setup" is-config="true" duration-ms="8579" started-at="2019-07-22T13:48:56Z" finished-at="2019-07-22T13:49:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="setup" is-config="true" duration-ms="8750" started-at="2019-07-22T15:37:16Z" finished-at="2019-07-22T15:37:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="accountCreationMandatoryFieldsValidationTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="accountCreationMandatoryFieldsValidationTest" duration-ms="5122" started-at="2019-07-22T13:49:04Z" finished-at="2019-07-22T13:49:10Z">
+        <test-method status="PASS" signature="accountCreationMandatoryFieldsValidationTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="accountCreationMandatoryFieldsValidationTest" duration-ms="4917" started-at="2019-07-22T15:37:25Z" finished-at="2019-07-22T15:37:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountCreationMandatoryFieldsValidationTest -->
-        <test-method status="PASS" signature="createAccountTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="createAccountTest" duration-ms="7444" started-at="2019-07-22T13:49:10Z" finished-at="2019-07-22T13:49:17Z">
+        <test-method status="PASS" signature="createAccountTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="createAccountTest" duration-ms="7821" started-at="2019-07-22T15:37:30Z" finished-at="2019-07-22T15:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountTest -->
-        <test-method status="PASS" signature="accountCreationWithExistingMailIDValidationTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="accountCreationWithExistingMailIDValidationTest" duration-ms="2007" started-at="2019-07-22T13:49:17Z" depends-on-methods="daviesgroup.techchallenge.test.Tests.createAccountTest" finished-at="2019-07-22T13:49:19Z">
+        <test-method status="PASS" signature="accountCreationWithExistingMailIDValidationTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="accountCreationWithExistingMailIDValidationTest" duration-ms="3015" started-at="2019-07-22T15:37:38Z" depends-on-methods="daviesgroup.techchallenge.test.Tests.createAccountTest" finished-at="2019-07-22T15:37:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountCreationWithExistingMailIDValidationTest -->
-        <test-method status="PASS" signature="loginAndAddToCartTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="loginAndAddToCartTest" duration-ms="12786" started-at="2019-07-22T13:49:19Z" depends-on-methods="daviesgroup.techchallenge.test.Tests.createAccountTest" finished-at="2019-07-22T13:49:32Z">
+        <test-method status="PASS" signature="loginAndAddToCartTest()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="loginAndAddToCartTest" duration-ms="14682" started-at="2019-07-22T15:37:41Z" depends-on-methods="daviesgroup.techchallenge.test.Tests.createAccountTest" finished-at="2019-07-22T15:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndAddToCartTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="tearDown" is-config="true" duration-ms="114" started-at="2019-07-22T13:49:32Z" finished-at="2019-07-22T13:49:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:daviesgroup.techchallenge.test.Tests@55f3ddb1]" name="tearDown" is-config="true" duration-ms="90" started-at="2019-07-22T15:37:56Z" finished-at="2019-07-22T15:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

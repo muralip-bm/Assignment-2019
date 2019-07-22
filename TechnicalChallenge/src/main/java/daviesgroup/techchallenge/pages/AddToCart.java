@@ -42,7 +42,7 @@ public void addToCartAndVerifyAddedItem() throws InterruptedException {
 		driver.switchTo().frame(driver.findElement(iframe));
 		wait.until(ExpectedConditions.elementToBeClickable(addToCart_Button));
 		String itemSelectedPrice = driver.findElement(itemPrice).getText();
-		driver.findElement(addToCart_Button).click();
+		driver.findElement(addToCart_Button).sendKeys(Keys.RETURN);
 		
 		
 		String successMessage = driver.findElement(success_Message).getText();
@@ -62,7 +62,7 @@ public void addToCartAndVerifyAddedItem() throws InterruptedException {
 		Assert.assertTrue(itemSelectedPrice.equals(itemAddedPrice), "Price of item selected and item added in the cart not matching"); 
 		System.out.println("The description and price of item selected and item added are matching. Item selected: " + itemSelected + "tem Price: " + itemSelectedPrice );
 	
-				driver.findElement(Login.home).click();
+		driver.findElement(Login.home).click();
 		
 			
 }

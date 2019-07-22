@@ -16,15 +16,11 @@ import daviesgroup.techchallenge.base.Utility;
 
 public class Login extends Base{
 	
-	
-	
 	public String login_MailID = null;
 	public String login_Password = null;
-	
 	public String createMailID = null;
 	public String firstName = null;
-	public String lastName = null;
-	
+	public String lastName = null;	
 	public String pwd =  null;
 	public String day = null;
 	public String month = null;
@@ -49,12 +45,10 @@ public class Login extends Base{
 	public Login() {
 	
 	login_MailID = prop.getProperty("loginMailID");
-	login_Password = prop.getProperty("loginPassword");
-	
+	login_Password = prop.getProperty("loginPassword");	
 	createMailID = prop.getProperty("createAccountMailID");
 	firstName = prop.getProperty("firstname");
-	lastName = prop.getProperty("lastname");
-	
+	lastName = prop.getProperty("lastname");	
 	pwd =  prop.getProperty("passwd");
 	day = prop.getProperty("day");
 	month = prop.getProperty("month");
@@ -68,8 +62,7 @@ public class Login extends Base{
 	zipCode = prop.getProperty("zipcode");
 	homePhone = prop.getProperty("homephone");
 	mobile = prop.getProperty("mobile");
-	addressAlias = prop.getProperty("addressalias");
-	
+	addressAlias = prop.getProperty("addressalias");	
 	newMailID = prop.getProperty("newMailID");
 	dynamicMailID = Utility.newMailID(firstName);
 }
