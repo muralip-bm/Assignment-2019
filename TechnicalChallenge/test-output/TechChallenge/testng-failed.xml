@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TechChallenge]">
+  <test name="UITests(failed)">
+    <classes>
+      <class name="daviesgroup.techchallenge.test.Tests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createAccountTest"/>
+          <include name="loginAndAddToCartTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- daviesgroup.techchallenge.test.Tests -->
+    </classes>
+  </test> <!-- UITests(failed) -->
+</suite> <!-- Failed suite [TechChallenge] -->

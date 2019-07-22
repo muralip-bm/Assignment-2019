@@ -13,11 +13,14 @@ public class Base {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	public static String givenurl;
+	public static String currenturl;
 
 	public Base() {
 		try {
 			prop = new Properties();
-			FileInputStream fip = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\daviesgroup\\techchallenge\\config\\configdetails.properties");
+			FileInputStream fip = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//daviesgroup//techchallenge//config//configdetails.properties");
+
 			prop.load(fip);
 		} catch (FileNotFoundException fe) {
 			fe.printStackTrace();
@@ -32,7 +35,7 @@ public class Base {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Files\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else {
 			System.out.println("Please select browser option as chrome ");
@@ -43,7 +46,8 @@ public class Base {
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 
 		driver.navigate().to(prop.getProperty("url"));
-		System.out.println("Site launchced on browser is: " + driver.getCurrentUrl());
+		givenurl = prop.getProperty("url");
+		currenturl = driver.getCurrentUrl();
 	}
 
 }
